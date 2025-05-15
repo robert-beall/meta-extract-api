@@ -17,7 +17,9 @@ app.post('/api/get-meta', upload.single('file'), async (req, res) => {
     const data: FileInfo = parseFileData(req.file);
 
     fs.unlink(req.file.path, (err) => {
-        console.error('Failed to delete file');
+        if (err) {
+            console.error('Failed to delete file');
+        }
     })
 
     res.send(data);

@@ -1,4 +1,5 @@
 interface FileInfo {
     name: string,
-    type: string,
+    mimetype: string,
+    size: number
 };
