@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "NodeNext",  
+      "rootDir": "./", 
+      "moduleResolution": "nodeNext", 
+      "allowImportingTsExtensions": true,
+      "noEmit": true, 
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,       
+      "skipLibCheck": true 
+    }
+  }
